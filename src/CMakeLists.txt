@@ -181,6 +181,6 @@ set_property(TARGET WalletApi PROPERTY OUTPUT_NAME "wallet-api")
 
 # Additional make targets, can be used to build a subset of the targets
 # e.g. make pool will build only TurtleCoind and service
-add_custom_target(pool DEPENDS TurtleCoind service)
-add_custom_target(solominer DEPENDS TurtleCoind zedwallet miner)
-add_custom_target(cli DEPENDS TurtleCoind zedwallet)
+add_custom_target(pool DEPENDS DemoCoind service)
+add_custom_target(solominer DEPENDS DemoCoind Demowallet miner)
+add_custom_target(cli DEPENDS DemoCoind Demowallet)
